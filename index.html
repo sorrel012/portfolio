@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Hyowon's Portfolio</title>
+    <meta name="description" content="Portfolio for web-developer Hyowon">
+    <meta name="author" content="Hyowon">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script src="https://kit.fontawesome.com/7121714adf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     
@@ -30,12 +36,68 @@
             안녕하세요.<br>
             백엔드 개발자 한효원입니다.
         </h1>
-        <h2 class="home_description">부가설명 한 줄</h2>
-        <button class="nome__contact">CONTACT ME</button>
+        <h2 class="home_pdf">
+            포트폴리오 pdf 버전 다운로드를 원하시면 클릭해 주세요.
+        </h2>
+        <button class="home__contact">CONTACT ME</button>
     </section>
 
     <!-- About -->
-    <section id="about"></section>
+    <section id="about">
+        <h1>About me</h1>
+        <div class="about__me">
+            <div class="about_me_ps">
+                <div class="ps__info">
+                    <div class="info__icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info__title">이름</div>
+                    <div class="info__content">한효원</div>
+                </div>
+                <div class="ps__info">
+                    <div class="info__icon">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <div class="info__title">생년월일</div>
+                    <div class="info__content">1998.01.17</div>
+                </div>
+                <div class="ps__info">
+                    <div class="info__icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="info__title">학력</div>
+                    <div class="info__content">
+                        청주교육대학교 초등교육과
+                        <div>영어교육 심화전공</div>
+                    </div>
+                </div>
+                <div class="ps__info">
+                    <div class="info__icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div class="info__title">교육</div>
+                    <div class="info__content">
+                        쌍용교육센터 강남
+                        <div>2023.02-01 - 2023.07.12</div>
+                    </div>
+                </div>
+            </div>
+                <div class="about_me__cf">
+                    <div class="cf__detail">
+                        <div class="detail__title">자격증</div>
+                        <div class="detail__name">정보처리기사(필기)</div>
+                        <div class="detail__date">2023.03.</div>
+                    </div>
+                    <div class="cf__detail">
+                        <div class="detail__title">어학</div>
+                        <div class="detail__name">Toeic</div>
+                        <div class="detail__score">880</div>
+                        <div class="detail__date">2022.06.12</div>
+                    </div>
+                </div>
+            <div class="about_me_cf"></div>
+        </div>
+    </section>
 
     <!-- Skills -->
     <section id="skills"></section>
