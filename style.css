@@ -152,6 +152,7 @@
     background: url('images/home-background2.png') center/cover no-repeat;
     padding: 40px;
     text-align: center;
+    color: var(--color-dark-grey);
 }
 
 #home .home__title {
@@ -161,6 +162,7 @@
 }
 
 .home__title > div {
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
@@ -171,13 +173,13 @@
 }
 
 .home__download {
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 35px;
   font-size: var(--font-regular);
 }
 
 .home__download > a {
     color: var(--color-dark-brown);    
+    font-size: 1.5rem;
 }
 
 .home__download > a:hover {
@@ -185,10 +187,35 @@
     color: var(--color-dark-brown);    
 }
 
-.home__contact {
-    margin-top: 5px;
-    color: var(--color-dark-brown);    
-    background-color: var(--color-light-white);
-    border: 1px solid var(--color-dark-brown);
-    border-radius: 5px;
+/* About me */
+
+#about {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#about h1 {
+    text-align: center;
+    font-family: TmoneyRoundWindExtraBold;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    
+}
+
+.about_me_ps {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.info__title {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.info__detail {
+    color: var(--color-grey);
+    font-size: 1rem;
 }
