@@ -1,9 +1,17 @@
 @font-face {
-    font-family: 'TmoneyRoundWindExtraBold';
+    font-family: 'TmoneyRoundWindRegular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'TmoneyRoundWindExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* Global */
 :root {
@@ -21,6 +29,7 @@
     --color-beige: #FAF4ED;
     --color-black: #141414;
     --color-brown: rgb(138, 91, 48);
+    --color-dark-brown: rgb(77, 48, 21);
   
     /* Font size */
     --font-large: 48px;
@@ -44,6 +53,9 @@
     box-sizing: border-box;
   }
 
+  html {
+    font-family: TmoneyRoundWindRegular;  
+  }
 
   body {
     margin: 0;
@@ -142,8 +154,41 @@
     text-align: center;
 }
 
+#home .home__title {
+    font-family: TmoneyRoundWindExtraBold;
+    font-weight: lighter;
+    color: var(--color-dark-brown);
+}
+
+.home__title > div {
+    margin-bottom: 10px;
+}
+
 .home__pic {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+}
+
+.home__download {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: var(--font-regular);
+}
+
+.home__download > a {
+    color: var(--color-dark-brown);    
+}
+
+.home__download > a:hover {
+    font-weight: var(--weight-bold);
+    color: var(--color-dark-brown);    
+}
+
+.home__contact {
+    margin-top: 5px;
+    color: var(--color-dark-brown);    
+    background-color: var(--color-light-white);
+    border: 1px solid var(--color-dark-brown);
+    border-radius: 5px;
 }
