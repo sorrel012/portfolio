@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,23 +11,31 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <script src="https://kit.fontawesome.com/7121714adf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="main.js" defer></script>
+    <style>
+        .project__photo {
+            width: 500px;
+        }
+    </style>
 </head>
+
 <body>
-    
+
     <!-- Menu -->
     <nav id="header">
         <div class="header_logo">
             <img src="images/favicon.png" style="width: 30px; height: 30px;">
             <a href="#">Han Hyo won</a>
         </div>
-            <ul class="header__menu">
-                <ul class="header__menu__item">Home</ul>
-                <ul class="header__menu__item">About</ul>
-                <ul class="header__menu__item">Skill</ul>
-                <ul class="header__menu__item">My work</ul>
-                <ul class="header__menu__item">Contact</ul>
-            </ul>
+        <ul class="header__menu">
+            <ul class="header__menu__item">Home</ul>
+            <ul class="header__menu__item">About</ul>
+            <ul class="header__menu__item">Skill</ul>
+            <ul class="header__menu__item">My work</ul>
+            <ul class="header__menu__item">Contact</ul>
+        </ul>
     </nav>
 
     <!-- Home -->
@@ -36,9 +45,11 @@
             안녕하세요.<br>
             백엔드 개발자 한효원입니다.
         </h1>
-        <h2 class="home_pdf">
-            포트폴리오 pdf 버전 다운로드를 원하시면 클릭해 주세요.
-        </h2>
+        <div class="home__download">
+            <a href="https://drive.google.com/u/0/uc?id=185V41Wg6FdAomlSv2X5Hzl-_AdbxT0-D&export=download">포트폴리오 pdf 버전
+                다운로드를 원하시면 클릭해 주세요. <i class="fas fa-arrow-pointer" style="color: blue;"></i></a>
+
+        </div>
         <button class="home__contact">CONTACT ME</button>
     </section>
 
@@ -55,48 +66,48 @@
                     <div class="info__content">한효원</div>
                 </div>
                 <div class="ps__info">
-                    </div>
-                    <div class="info__title">                        
-                        <i class="fa-solid fa-cake-candles"></i>
-                        생년월일
-                    </div>
-                    <div class="info__content">1998.01.17</div>
                 </div>
-                <div class="ps__info">
-                    <div class="info__title">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        학력
-                    </div>
-                    <div class="info__content">
-                        청주교육대학교 초등교육과
-                        <div>영어교육 심화전공</div>
-                    </div>
+                <div class="info__title">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    생년월일
                 </div>
-                <div class="ps__info">
-                    <div class="info__title">                        
-                        <i class="fa-solid fa-desktop"></i>
-                        교육
-                    </div>
-                    <div class="info__content">
-                        쌍용교육센터 강남
-                        <div>2023.02-01 - 2023.07.12</div>
-                    </div>
+                <div class="info__content">1998.01.17</div>
+            </div>
+            <div class="ps__info">
+                <div class="info__title">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    학력
+                </div>
+                <div class="info__content">
+                    청주교육대학교 초등교육과
+                    <div>영어교육 심화전공</div>
                 </div>
             </div>
-                <div class="about_me__cf">
-                    <div class="cf__detail">
-                        <div class="detail__title">자격증</div>
-                        <div class="detail__name">정보처리기사(필기)</div>
-                        <div class="detail__date">2023.03.</div>
-                    </div>
-                    <div class="cf__detail">
-                        <div class="detail__title">어학</div>
-                        <div class="detail__name">Toeic</div>
-                        <div class="detail__score">880</div>
-                        <div class="detail__date">2022.06.12</div>
-                    </div>
+            <div class="ps__info">
+                <div class="info__title">
+                    <i class="fa-solid fa-desktop"></i>
+                    교육
                 </div>
-            <div class="about_me_cf"></div>
+                <div class="info__content">
+                    쌍용교육센터 강남
+                    <div>2023.02-01 - 2023.07.12</div>
+                </div>
+            </div>
+        </div>
+        <div class="about_me__cf">
+            <div class="cf__detail">
+                <div class="detail__title">자격증</div>
+                <div class="detail__name">정보처리기사(필기)</div>
+                <div class="detail__date">2023.03.</div>
+            </div>
+            <div class="cf__detail">
+                <div class="detail__title">어학</div>
+                <div class="detail__name">Toeic</div>
+                <div class="detail__score">880</div>
+                <div class="detail__date">2022.06.12</div>
+            </div>
+        </div>
+        <div class="about_me_cf"></div>
         </div>
     </section>
 
@@ -142,40 +153,67 @@
         <h1>My work</h1>
         <div class="work__frame">
             <h2></h2>
-            <img src="" alt="">
+            <div class="project__photo">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/favicon.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/home-background1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/home-background2.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
             <div class="work__detail">
                 <div class="work__env">
-                    <div class="work__env">
-                        <div class="work__title">개발 기간</div>
-                        <div class="env__content"></div>
-                    </div>
-                    <div class="work__env">
-                        <div class="work__title">개발 인원</div>
-                        <div class="env__content"></div>
-                    </div>
-                    <div class="work__env">
-                        <div class="work__title">언어</div>
-                        <div class="env__content"></div>
-                    </div>
-                        <div class="work__title">DB</div>
-                        <div class="env__content"></div>
-                    </div>
-                    <div class="work__env">
-                        <div class="work__title">IDE</div>
-                        <div class="env__content"></div>
-                    </div>
+                    <div class="work__title">개발 기간</div>
+                    <div class="env__content"></div>
                 </div>
-                <div class="work__description">
-                    <div class="work__title">설명</div>
-                    <button class="description__btn" value="자세히 보기"></button>
-                    <div class="description__content"></div>
+                <div class="work__env">
+                    <div class="work__title">개발 인원</div>
+                    <div class="env__content"></div>
                 </div>
+                <div class="work__env">
+                    <div class="work__title">언어</div>
+                    <div class="env__content"></div>
+                </div>
+                <div class="work__env">
+                    <div class="work__title">DB</div>
+                    <div class="env__content"></div>
+                </div>
+                <div class="work__env">
+                    <div class="work__title">IDE</div>
+                    <div class="env__content"></div>
+                </div>
+            </div>
+            <div class="work__description">
+                <div class="work__title">설명</div>
+                <button class="description__btn" value="자세히 보기"></button>
+                <div class="description__content"></div>
             </div>
         </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
+        <h1 class="contact__title"></h1>
         <div class="about__me__ps">
             <div class="ps__info">
                 <div class="info__title">
@@ -193,8 +231,15 @@
             </div>
         </div>
         <div class="contact__addition">
+            <a href="https://github.com/sorrel012" target="_blank">
+                <i class="fa-brands fa-github" style="color: #292929;"></i>
+            </a>
+            <a href="https://sorrel012.tistory.com/" target="_blank">
+                <img src="images/tistory.png" alt="tistory" style="width: 50px; height: 50px;">
+            </a>
         </div>
     </section>
-     
+
 </body>
+
 </html>
