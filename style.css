@@ -98,6 +98,7 @@
     margin: 4px 0;
   }
 
+  
 /* Header */
 #header {
     display: flex;
@@ -146,6 +147,15 @@
     margin-left: 15px;
 }
 
+/* Common */
+#about h1, #skills h1, #work h1, #contact h1 {
+    text-align: center;
+    font-family: TmoneyRoundWindExtraBold;
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
 
 /* Home */
 #home {
@@ -187,21 +197,13 @@
     color: var(--color-dark-brown);    
 }
 
+
 /* About me */
 
 #about {
-    padding: 50px;
+    padding-top: 50px;
     max-width: 1200px;
     margin: auto;
-}
-
-#about h1 {
-    text-align: center;
-    font-family: TmoneyRoundWindExtraBold;
-    font-weight: lighter;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    
 }
 
 .about_me_ps {
@@ -212,14 +214,19 @@
 }
 
 .info__title {
-    margin-top: 50px;
+    margin-bottom: 2px;
     font-size: 2rem;
+    font-weight: var(--weight-bold);
+}
+
+.info__content {
+    margin-bottom: 30px;
 }
 
 .info__detail, .detail__date {
     color: var(--color-grey);
     font-size: 1rem;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .about__me__cf {
@@ -230,13 +237,72 @@
 }
 
 .detail__title {
+    font-weight: var(--weight-bold);
     font-size: 1.8rem;
 }
 
 .detail__name {
     font-size: 1.3rem;
+    margin-top: 5px;
 }
 
 .detail__score {
     font-size: 1rem;
+}
+
+
+/* Skills */
+
+#skills {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    font-weight: var(--weight-bold);
+}
+
+.skills__color {    
+    padding: 30px;
+    background-color: var(--color-beige);
+    border-radius: 50%;
+}
+
+.skills__contents1 {
+    text-align: center;
+    height: 400px;
+    width: 420px;
+}
+
+.skills__contents2 {
+    text-align: center;
+    height: 280px;
+    width: 420px;
+    padding: auto 0;
+}
+
+.skills__contents3 {
+    text-align: center;
+    height: 320px;
+    width: 420px;
+}
+
+.skills__contents4 {
+    text-align: center;
+    height: 220px;
+    width: 420px;
+}
+
+.skills__title {
+    padding-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.logo__img {
+    margin-bottom: 20px;
 }
