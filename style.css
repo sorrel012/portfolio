@@ -199,6 +199,7 @@
     text-align: center;
     font-family: TmoneyRoundWindExtraBold;
     font-weight: lighter;
+    font-size: 3rem;
     margin-bottom: 20px;
     
 }
@@ -211,11 +212,31 @@
 }
 
 .info__title {
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 2rem;
 }
 
-.info__detail {
+.info__detail, .detail__date {
     color: var(--color-grey);
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.about__me__cf {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+.detail__title {
+    font-size: 1.8rem;
+}
+
+.detail__name {
+    font-size: 1.3rem;
+}
+
+.detail__score {
     font-size: 1rem;
 }
