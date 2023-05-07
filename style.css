@@ -154,7 +154,7 @@
     font-weight: lighter;
     font-size: 3rem;
     margin-bottom: 50px;
-    margin-top: 20px;
+    padding-top: 40px;
 }
 
 /* Home */
@@ -206,7 +206,7 @@
     margin: auto;
 }
 
-.about_me_ps {
+.about__me__ps {
     display: flex;
     justify-content: space-around;
     font-size: 1.5rem;
@@ -411,4 +411,47 @@
 
 #p4 {
     margin-bottom: 60px;
+}
+
+/* Contact */
+
+#contact {
+    background-color: var(--color-beige);
+    color: var(--color-dark-brown);
+    padding-bottom: 10px;
+}
+
+#contact h1 {
+    color: var(--color-dark-brown);
+}
+
+#contact .about__me__ps {
+    width: 1000px;
+}
+
+.contact__addition {
+    font-size: 50px;
+    text-align: center;
+}
+
+.contact__addition a {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.contact__rights {
+    color: var(--color-dark-brown);
+    font-size: var(--font-small);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.contact__logo img:hover {
+    transform: scale(1.1,1.1);
+}
+
+#contact .info__content {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
