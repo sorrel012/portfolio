@@ -325,9 +325,8 @@
     margin-top: 60px;
 }
 
-#p1 .project__photo {
+.project__photo {
     margin: 30px auto;
-    height: 350px;
 }
 
 #work .carousel-indicators {
@@ -349,12 +348,11 @@
 
 .work__detail {
     width: 600px;
-    padding-left: 100px;
 }
 
 .work__description {
     width: 550px;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 .work__title {
@@ -382,16 +380,6 @@
     color: var(--color-dark-grey);
 }
 
-#p2 .project__photo {
-    margin: 30px auto;
-    height: 520px;
-}
-
-#p3 .project__photo {
-    margin: 30px auto;
-    height: 320px;
-}
-
 #env1 .work__title {
     display: block;
 }
@@ -404,13 +392,13 @@
     margin-bottom: 10px;
 }
 
-#p4 .project__photo {
-    margin: 30px auto;
-    height: 410px;
+.work__frame .accordion-button {
+    font-weight: var(--weight-semi-bold);
+    font-size: var(--font-regular);
 }
 
-#p4 {
-    margin-bottom: 60px;
+.work__frame .accordion-body {
+    padding-top: 30px;
 }
 
 /* Contact */
@@ -419,6 +407,7 @@
     background-color: var(--color-beige);
     color: var(--color-dark-brown);
     padding-bottom: 10px;
+    margin-top: 70px;
 }
 
 #contact h1 {
@@ -440,7 +429,7 @@
 }
 
 .contact__rights {
-    color: var(--color-dark-brown);
+    color: var(--color-dark-white);
     font-size: var(--font-small);
     text-align: center;
     margin-bottom: 10px;
