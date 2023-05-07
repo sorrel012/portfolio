@@ -287,7 +287,7 @@
 
 .skills__contents3 {
     text-align: center;
-    height: 320px;
+    height: 300px;
     width: 400px;
 }
 
@@ -305,4 +305,110 @@
 
 .logo__img {
     margin-bottom: 20px;
+}
+
+
+/* Work */
+
+#work { 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#work h1 {
+    margin-bottom: 0;
+}
+
+#work h2 {
+    text-align: center;
+    font-weight: var(--weight-semi-bold);
+    margin-top: 60px;
+}
+
+#p1 .project__photo {
+    margin: 30px auto;
+    height: 350px;
+}
+
+#work .carousel-indicators {
+    margin-bottom: 0;
+}
+
+#p1 .carousel-indicators button, #p2 .carousel-indicators button, #p4 .carousel-indicators button {
+    background-color: black;
+}
+
+.work__frame {
+    margin: 0 auto;
+}
+
+.work__box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.work__detail {
+    width: 600px;
+    padding-left: 100px;
+}
+
+.work__description {
+    width: 550px;
+    padding-left: 100px;
+}
+
+.work__title {
+    display: inline-block;
+    width: 110px;
+    margin-bottom: 10px;
+    font-weight: var(--weight-semi-bold);
+    font-size: 1.4rem;
+}
+
+.env__content {
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+.work__description p {
+    font-size: 1.3rem;
+}
+
+.description__btn {
+    margin-bottom: 10px;
+    border: 1px solid var(--color-light-grey);
+    border-radius: 7px;
+    background-color: var(--color-white);
+    color: var(--color-dark-grey);
+}
+
+#p2 .project__photo {
+    margin: 30px auto;
+    height: 520px;
+}
+
+#p3 .project__photo {
+    margin: 30px auto;
+    height: 320px;
+}
+
+#env1 .work__title {
+    display: block;
+}
+
+#env2 .work__title {
+    display: block;
+}
+
+.env__content__detail {
+    margin-bottom: 10px;
+}
+
+#p4 .project__photo {
+    margin: 30px auto;
+    height: 410px;
+}
+
+#p4 {
+    margin-bottom: 60px;
 }
