@@ -69,25 +69,25 @@
   
 
   /* Typography */
-  
+
   h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-black);
+    color: rgb(59, 38, 16);
     margin: 16px 0px;
   }
   
   h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: var(--color-black);
+    color: rgb(59, 38, 16);
     margin: 8px 0;
   }
   
   h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
+    color: rgb(59, 38, 16);
     margin: 8px 0;
   }
   
@@ -201,7 +201,10 @@
 /* About me */
 
 #about {
-    padding-top: 50px;
+    background-color: var(--color-white);
+}
+
+.about__wrapper{    
     max-width: 1200px;
     margin: auto;
 }
@@ -211,6 +214,12 @@
     justify-content: space-around;
     font-size: 1.5rem;
     margin: 0 auto;
+    margin-bottom: 40px;
+    border: 3px dotted #e3d5ca;
+    background-color: #fafaf9;
+    border-radius: 30px;
+    padding: 20px;
+    color: rgb(54, 35, 16);
 }
 
 .info__title {
@@ -219,14 +228,9 @@
     font-weight: var(--weight-bold);
 }
 
-.info__content {
-    margin-bottom: 30px;
-}
-
 .info__detail, .detail__date {
-    color: var(--color-grey);
+    color: rgb(102, 85, 70);
     font-size: 1rem;
-    margin-bottom: 70px;
 }
 
 .about__me__cf {
@@ -234,11 +238,21 @@
     justify-content: space-around;
     font-size: 1.5rem;
     margin: 0 auto;
+    margin-bottom: 50px;
+    border: 3px dotted #e3d5ca;
+    background-color: #fafaf9;
+    border-radius: 30px;
+    padding: 20px;
+    color: rgb(54, 35, 16);
 }
 
 .detail__title {
     font-weight: var(--weight-bold);
     font-size: 1.8rem;
+}
+
+.margin-bottom {
+    margin-bottom: 15px;
 }
 
 .detail__name {
@@ -254,6 +268,10 @@
 /* Skills */
 
 #skills {
+    background-color: #FCD5CE;
+}
+
+.skills__wrapper {
     max-width: 1200px;
     margin: auto;
 }
@@ -268,8 +286,9 @@
 
 .skills__color {    
     padding: 30px;
-    background-color: var(--color-beige);
+    background-color: rgb(255, 252, 255);
     border-radius: 50%;
+    color: rgb(54, 35, 16);
 }
 
 .skills__contents1 {
@@ -311,8 +330,20 @@
 /* Work */
 
 #work { 
+    background-color: #F8EDEB;
+    padding: 20px;
+}
+
+.work__wrapper {    
     max-width: 1200px;
     margin: 0 auto;
+}
+
+#p1, #p2, #p3, #p4 {
+    background-color: var(--color-white);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 40px;
 }
 
 #work h1 {
@@ -322,7 +353,6 @@
 #work h2 {
     text-align: center;
     font-weight: var(--weight-semi-bold);
-    margin-top: 60px;
 }
 
 .project__photo {
@@ -339,6 +369,7 @@
 
 .work__frame {
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .work__box {
@@ -395,11 +426,22 @@
 .work__frame .accordion-button {
     font-weight: var(--weight-semi-bold);
     font-size: var(--font-regular);
+    color: rgb(54, 35, 16);
 }
 
 .work__frame .accordion-body {
     padding-top: 30px;
 }
+
+.work__frame .accordion-button:not(.collapsed) {
+    background-color: #fdfafa;
+    color: rgb(204, 74, 96);
+}
+
+.work__frame .accordion-button:focus {
+    border-color: rgb(204, 74, 96);
+}
+
 
 /* Contact */
 
@@ -407,7 +449,6 @@
     background-color: var(--color-beige);
     color: var(--color-dark-brown);
     padding-bottom: 10px;
-    margin-top: 70px;
 }
 
 #contact h1 {
