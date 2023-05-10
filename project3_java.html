@@ -144,61 +144,71 @@
             <div class="function__description">코스피와 코스닥 테이블의 데이터를 각각 
                 <span class="bold">상승률, 하락률 순위대로 정렬하여 <span class="underline">view</span>를 생성합니다.</span> 상승률/하락률 Top 10의 시세정보를 조회하는 기능을 view를 이용하여 간단하게 구현할 수 있습니다.</div>
         </div>
-        <div class="function" id="function1">
+        <div class="function" id="function2">
             <div class="function__name">2️⃣ 종목 검색</div>
             <div class="function__description">종목명을 입력하여 원하는 종목의 시세를 검색하는 기능입니다. 
                 회원의 경우 검색한 종목을 관심 종목으로 등록하거나 매수할 수 있습니다.</div>
             <div class="function__screen">
-                <div id="carouselExampleIndicators12" class="carousel slide" data-bs-ride="true">
+                <div id="carouselExampleIndicators15" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide-to="0"
+                        <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators12" data-bs-slide-to="1"
+                        <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators15" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/java_screen_2.png" class="d-block w-100" alt="java">
+                            <img src="images/java_screen_5.png" class="d-block w-100 carousel-image" alt="java">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/java_screen_1.png" class="d-block w-100" alt="java">
+                            <img src="images/java_screen_6.png" class="d-block w-100 carousel-image" alt="java">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/java_screen_7.png" class="d-block w-100 carousel-image" alt="java">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/java_screen_8.png" class="d-block w-100 carousel-image" alt="java">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleIndicators12" data-bs-slide="prev">
+                        data-bs-target="#carouselExampleIndicators15" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleIndicators12" data-bs-slide="next">
+                        data-bs-target="#carouselExampleIndicators15" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
             <div class="function__code">
-                <div id="carouselExampleIndicators11" class="carousel slide" data-bs-ride="true">
+                <div id="carouselExampleIndicators16" class="carousel slide" data-bs-ride="true">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide-to="0"
+                        <button type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators11" data-bs-slide-to="1"
+                        <button type="button" data-bs-target="#carouselExampleIndicators16" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/java_code_1.png" class="d-block w-100" alt="java">
+                            <img src="images/java_code_5.png" class="d-block w-100 carousel-image" alt="java">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/java_code_2.png" class="d-block w-100" alt="java">
+                            <img src="images/java_code_6.png" class="d-block w-100 carousel-image" alt="java">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button"
-                        data-bs-target="#carouselExampleIndicators11" data-bs-slide="prev">
+                        data-bs-target="#carouselExampleIndicators16" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button"
-                        data-bs-target="#carouselExampleIndicators11" data-bs-slide="next">
+                        data-bs-target="#carouselExampleIndicators16" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -206,6 +216,120 @@
             </div>
             <div class="function__description">검색한 종목을 관심 종목으로 등록하거나 
                 매수할 수 있는 메소드입니다. 비회원일 경우 <span class="bold">NullPointerException</span>을 발생시킵니다. 해당 <span class="bold"><span class="underline">예외</span>는 userAdditionalInput()에서 처리</span>하여 로그인하지 않은 경우 해당 기능을 이용할 수 없음을 안내합니다.</div>
+        </div>
+        <div class="function" id="function3">
+            <div class="function__name">3️⃣ 개인정보 조회 및 수정</div>
+            <div class="function__description">로그인한 사용자가 자신의 개인정보를 조회하고 수정할 수 있는 기능입니다.
+                비밀번호, 이메일, 연락처를 수정할 수 있으며 회원 탈퇴도 이루어집니다.</div>
+            <div class="function__screen">
+                <div id="carouselExampleIndicators17" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators17" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/java_screen_9.png" class="d-block w-100" alt="java">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/java_screen_10.png" class="d-block w-100" alt="java">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/java_screen_11.png" class="d-block w-100" alt="java">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/java_screen_12.png" class="d-block w-100" alt="java">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleIndicators17" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleIndicators17" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="function__code">
+                <div id="carouselExampleIndicators18" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/java_code_7.png" class="d-block w-100" alt="java">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="function__description">사용자의 이메일 변경을 처리하는 메소드입니다.
+                먼저 <span class="bold">현재 이메일 주소와 새로운 이메일 주소가 동일한지 <span class="underline">검증</span></span>한 후, 동일할 경우 안내 메시지를 출력 후 다시 입력을 받습니다. 
+                동일하지 않을 경우 <span class="bold">이메일 형식이 올바른지<span class="underline">검증</span></span>
+                하여 올바를 경우 이메일 주소를 변경합니다.</div>
+        </div>
+        <div class="function" id="function4">
+            <div class="function__name">4️⃣ 랭킹 조회</div>
+            <div class="function__description">사용자 자산 랭킹을 조회하는 기능입니다. 자신의 등수를 알 수 있고, 총 자산이 가장 많은 사용자 10명의 자산 
+                정보를 조회할 수 있습니다.</div>
+            <div class="function__screen">
+                <div id="carouselExampleIndicators19" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators19" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators19" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/java_screen_13.png" class="d-block w-100" alt="java">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/java_screen_14.png" class="d-block w-100" alt="java">
+                        </div>                        
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleIndicators19" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleIndicators19" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="function__code">
+                <div id="carouselExampleIndicators20" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/java_code_8.png" class="d-block w-100" alt="java">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="function__description">전체 사용자의 자산을 정렬하는 메소드입니다.
+                먼저 <span class="bold">사용자의 고유 번호가 key, 총 자산이 value인 <span class="underline">HashMap</span></span>에서 key와 value를 Entry 형식으로 변환합니다. 그 후 <span class="bold">총 자산인 value를 기준으로 내림차순 <span class="underline">정렬</span></span>하고, 만약 
+                <span class="bold">총 자산이 같을 경우 고유 번호인 key를 기준
+                으로 오름차순 <span class="underline">정렬</span></span>합니다.</div>
+        </div>
+        <div class="review">
+            <div class="category">🧾 소감</div>
+            <div class="review__team">
+                <div id="sort__team" class="sort"><팀 프로젝트></div>
+                <p> 처음으로 진행하는 팀프로젝트로, 프로젝트 초기 단계에서 많은 이야기룰 나누었습니다. 특히 설계 과정에서 활발한 상호작용을 통해 기능을 세부적으로 분배하여 공통된 메소드를 추출했습니다. 이를 통해 같은 작업을 반복하는 일을 줄여 효율성을 높일 수 있었습니다. 기능을 구현할 때는 처음에 branch를 나누지 않고 main branch에서 모두 작업하다 보니 계속 충돌이 발생하였습니다. 이를 해결하기 위해 각자 branch를 생성하고, 기능 구현을 마친 후 팀원들과 공유한 후 병합하는 방법을 선택했더니 오류를 줄일 수 있었습니다. 이처럼 구현 중에도 실시간으로 작업하며 오류 없이 진행하기 위해서 끊임없이 이야기를 나누어야 했습니다. 소통이라는 <span class="bold">팀 단위 작업에서 가장 중요한 것은 <span class="underline">소통</span>이라는 것을 깨달을 수 있었던 프로젝트</span>였습니다.</p>
+            </div>
+            <div class="review__ind">
+                <div id="sort__ind" class="sort"><개인 프로젝트></div>
+                <p> <span class="bold">팀 프로젝트를 하면서 느꼈던 불편한 점을 개선하기 위해 개인 프로젝트를 시작</span>했습니다. 팀 프로젝트 당시에는 파일 입출력을 통해 데이터를 관리했기 때문에 <span class="bold">데이터의 특정 부분에만 접근할 수 없어서 전체 데이터를 다 읽어온 후 조작하고 다시 전체를 저장</span>해야 했습니다. 데이터베이스에 대해 학습하며 이러한 불편함을 해결할 수 있을 것 같다는 생각이 들어 <span class="bold">파일입출력 구조에서 데이터베이스로 전환하는 개인 프로젝트를 추가로 진행</span>하게 되었습니다.</p>
+                <p> 개인 프로젝트를 진행할 때는 기존 팀 프로젝트에서 다른 팀원들이 구현한 코드도 수정해야 했기 때문에 많은 이해와 노력이 필요했습니다. 그렇지만 프로젝트를 마치고 나니 파일 입출력보다 훨씬 더 <span class="bold">간단하게, 효율적으로 데이터를 관리</span>할 수 있었습니다. 직접 겪었던 불편함을 해결하기 위해 데이터베이스를 활용하면서 데이터베이스의 필요성을 확실히 느낄 수 있었습니다.</p>
+            </div>
         </div>
     </div>
 </body>

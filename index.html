@@ -2,812 +2,1173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyowon's Portfolio</title>
-    <meta name="description" content="Portfolio for web-developer Hyowon">
-    <meta name="author" content="Hyowon">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <script src="https://kit.fontawesome.com/7121714adf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <script src="main.js" defer></script>
-    <style>
-        .project__photo {
-            width: 500px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hyowon's Portfolio</title>
+  <meta name="description" content="Portfolio for web-developer Hyowon">
+  <meta name="author" content="Hyowon">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="https://kit.fontawesome.com/7121714adf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <script src="main.js" defer></script>
+  <style>
+    .project__photo {
+      width: 500px;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <nav id="header">
-        <div class="header__logo">
-            <img src="images/favicon.png">
-            <a href="#">Han Hyowon</a>
-        </div>
-        <ul class="header__menu">
-            <li class="header__menu__item active">Home</li>
-            <li class="header__menu__item">About</li>
-            <li class="header__menu__item">Skill</li>
-            <li class="header__menu__item">My work</li>
-            <li class="header__menu__item">Contact</li>
-        </ul>
-    </nav>
+  <!-- Header -->
+  <nav id="header">
+    <div class="header__logo">
+      <img src="images/favicon.png">
+      <a href="#">Han Hyowon</a>
+    </div>
+    <ul class="header__menu">
+      <li class="header__menu__item active">Home</li>
+      <li class="header__menu__item">About</li>
+      <li class="header__menu__item">Skill</li>
+      <li class="header__menu__item">My work</li>
+      <li class="header__menu__item">Contact</li>
+    </ul>
+  </nav>
 
-    <!-- Home -->
-    <section id="home">
-        <img src="/images/logo.png" alt="Profile photo" class="home__pic"> <!-- 프로필 사진으로 변경 필요 -->
-        <h1 class="home__title">
-            <div>안녕하세요.</div>
-            백엔드 개발자 한효원입니다.
-        </h1>
-        <div class="home__download">
-            <a href="https://drive.google.com/u/0/uc?id=185V41Wg6FdAomlSv2X5Hzl-_AdbxT0-D&export=download">포트폴리오 pdf 버전
-                다운로드를 원하시면 클릭해 주세요. <i class="fas fa-arrow-pointer"></i></a>
-        </div>
-    </section>
+  <!-- Home -->
+  <section id="home">
+    <img src="/images/logo.png" alt="Profile photo" class="home__pic"> <!-- 프로필 사진으로 변경 필요 -->
+    <h1 class="home__title">
+      <div>안녕하세요.</div>
+      백엔드 개발자 한효원입니다.
+    </h1>
+    <div class="home__download">
+      <a href="https://drive.google.com/u/0/uc?id=185V41Wg6FdAomlSv2X5Hzl-_AdbxT0-D&export=download">포트폴리오 pdf 버전
+        다운로드를 원하시면 클릭해 주세요. <i class="fas fa-arrow-pointer"></i></a>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="about">
-        <h1>About me</h1>
-        <div class="about__wrapper">
-            <div class="about__me">
-                <div class="about__me__ps">
-                    <div class="info__box">
-                        <div class="ps__info">
-                            <div class="info__title">
-                                <i class="fa-solid fa-user info_icon"></i>
-                                이름
-                            </div>
-                            <div class="info__content margin-bottom">한효원</div>
-                        </div>
-                        <div class="ps__info">
-                            <div class="info__title">
-                                <i class="fa-solid fa-graduation-cap info_icon"></i>
-                                학력
-                            </div>
-                            <div class="info__content">청주교육대학교 초등교육과
-                                <div class="info__detail">영어교육 심화전공</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info__box">
-                        <div class="ps__info">
-                            <div class="info__title">
-                                <i class="fa-solid fa-cake-candles info_icon"></i>
-                                생년월일
-                            </div>
-                            <div class="info__content margin-bottom">1998.01.17</div>
-                        </div>
-                        <div class="ps__info">
-                            <div class="info__title">
-                                <i class="fa-solid fa-desktop info_icon"></i>
-                                교육
-                            </div>
-                            <div class="info__content">쌍용교육센터 강남
-                                <div class="info__detail">2023.02-01 - 2023.07.12</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about__me__cf">
-                    <div class="cf__box">
-                        <div class="cf__detail">
-                            <div class="detail__title">
-                                <i class="fa-solid fa-briefcase"></i>
-                                경력
-                            </div>
-                            <div class="detail__name">초등학교 교사</div>
-                            <div class="detail__date">2021.03.01 ~ 2022.11.25</div>
-                        </div>
-                    </div>
-                    <div class="cf__box">
-                        <div class="cf__detail">
-                            <div class="detail__title">
-                                <i class="fas fa-certificate"></i>
-                                자격증
-                            </div>
-                            <div class="detail__name">정보처리기사(필기)</div>
-                            <div class="detail__date">2023.03.</div>
-                        </div>
-                    </div>
-                    <div class="cf__box">
-                        <div class="cf__detail">
-                            <div class="detail__title">
-                                <i class="fas fa-globe"></i>
-                                어학
-                            </div>
-                            <div class="detail__name">
-                                Toeic
-                                <span class="detail__score">880</span>
-                            </div>
-                            <div class="detail__date">2022.06.12</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <div class="skills__wrapper">
-            <div class="skills__list">
-                <div class="skill__box">
-                    <div class="skills__contents1">
-                        <div class="skills__color">
-                            <div class="skills__title">BackEnd</div>
-                            <div class="skills__logo">
-                                <div class="logo__img">
-                                    <img src="images/skills_java.png" alt="java" width="70px" height="95px">
-                                    <img src="images/skills_jsp.png" alt="jsp" width="140px">
-                                </div>
-                                <div class="logo__img">
-                                    <div style="height: 55px;"><img src="images/skills_spring.png" alt="spring"
-                                            width="150px"></div>
-                                    <div><img src="images/skills_python.png" alt="python" width="150px" height="40px">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__contents4">
-                        <div class="skills__color">
-                            <div class="skills__title">DB</div>
-                            <div class="skills__logo" style="height: 50px;">
-                                <img src="images/skills_oracle.png" alt="oracle" width="200px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__contents3">
-                        <div class="skills__color">
-                            <div class="skills__title">Tools</div>
-                            <div class="skills__logo">
-                                <div style="height: 60px;"><img src="images/skills_eclipse.png" alt="eclipse"
-                                        width="180px">
-                                </div>
-                                <img src="images/skills_visualstudio.png" alt="vs" width="70px">
-                                <img src="images/skills_vscode.png" alt="vscode" width="60px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill__box">
-                    <div class="skills__contents1">
-                        <div class="skills__color">
-                            <div class="skills__title">FrontEnd</div>
-                            <div class="skills__logo">
-                                <div style="height: 100px;"><img src="images/skills_front.png" alt="front"
-                                        width="200px">
-                                </div>
-                                <div style="height: 80px;"><img src="images/skills_jquery.png" alt="jquery"
-                                        width="200px">
-                                </div>
-                                <div style="height: 50px;"><img src="images/skills_bootstrap.png" alt="bootstrap"
-                                        width="200px"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__contents2">
-                        <div class="skills__color">
-                            <div class="skills__title">Server</div>
-                            <div class="skills__logo">
-                                <img src="images/skills_tomcat.png" alt="tomcat" width="220px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skills__contents3">
-                        <div class="skills__color">
-                            <div class="skills__title">Etc.</div>
-                            <div class="skills__logo">
-                                <img src="images/skills_github.png" alt="github" width="60px">
-                                <img src="images/skills_git.png" alt="git" width="80px">
-                                <img src="images/skills_phtoshop.png" alt="photoshop" width="60px">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work">
-        <h1>My work</h1>
-        <div class="work__wrapper">
-            <div class="work__frame">
-                <div id="p1">
-                    <h2>물질의 성질</h2>
-                    <div class="project__photo">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                                    aria-label="Slide 7"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/scratch_1.png" class="d-block w-100" alt="scratch">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/scratch_2.png" class="d-block w-100" alt="scratch">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/scratch_3.png" class="d-block w-100" alt="scratch">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/scratch_4.png" class="d-block w-100" alt="scratch">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/scratch_5.png" class="d-block w-100" alt="scratch">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/scratch_6.png" class="d-block w-100" alt="scratch">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/scratch_7.png" class="d-block w-100" alt="scratch">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                프로젝트 소개
-                            </button>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="work__box">
-                                        <div class="work__detail">
-                                            <div class="work__env">
-                                                <span class="work__title">개발 기간</span>
-                                                <span class="env__content">2021.05.09 - 2021.05.29</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">개발 인원</span>
-                                                <span class="env__content">1명</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">언어</span>
-                                                <span class="env__content">Scratch</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">IDE</span>
-                                                <span class="env__content">Scratch 3.0</span>
-                                            </div>
-                                        </div>
-                                        <div class="work__description">
-                                            <span class="work__title">설명</span>
-                                            <p class="description__content">
-                                                초등학교 과학 '물질의 성질'을 주제로
-                                                제작하여 수업에 활용하였다.<br>메인 화면의 특정 물체를 선택하면 화면이 전환되며 선택한 물체를 구성하고 있는 물질에 대한
-                                                설명을
-                                                보여준다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="work__frame">
-                <div id="p2">
-                    <h2>Turtle Run</h2>
-                    <div class="project__photo">
-                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/python_1.png" class="d-block w-100" alt="python">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/python_2.png" class="d-block w-100" alt="python">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/python_3.png" class="d-block w-100" alt="python">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/python_4.png" class="d-block w-100" alt="python">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/python_5.png" class="d-block w-100" alt="python">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/python_6.png" class="d-block w-100" alt="python">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                프로젝트 소개
-                            </button>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="work__box">
-                                        <div class="work__detail">
-                                            <div class="work__env">
-                                                <span class="work__title">수업 기간</span>
-                                                <span class="env__content">2022.09.01 - 2022.10.13</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">언어</span>
-                                                <span class="env__content">Python</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">IDE</span>
-                                                <span class="env__content">IDLE</span>
-                                            </div>
-                                        </div>
-                                        <div class="work__description">
-                                            <span class="work__title">설명</span>
-                                            <p class="description__content">
-                                                초등학교 5-6학년 영재학급 학생들을
-                                                대상으로 진행된 수업이다.
-                                                파이썬의 기초 문법을 PPT와 활동지를 활용하여
-                                                학습한 후 코드를 구현하며 응용해보는
-                                                구성으로 수업을 진행했다.
-                                                최종적으로 악당 거북이를 피해 더 많은 먹이를 먹는
-                                                간단한 게임을 완성하였다.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="work__frame">
-                <div id="p3">
-                    <h2>모의 주식 투자 프로그램</h2>
-                    <div class="project__photo">
-                        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="6"
-                                    aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="7"
-                                    aria-label="Slide 8"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="8"
-                                    aria-label="Slide 9"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="9"
-                                    aria-label="Slide 10"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="10"
-                                    aria-label="Slide 11"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="11"
-                                    aria-label="Slide 12"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="12"
-                                    aria-label="Slide 13"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="13"
-                                    aria-label="Slide 14"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="14"
-                                    aria-label="Slide 15"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="15"
-                                    aria-label="Slide 16"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="16"
-                                    aria-label="Slide 17"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="17"
-                                    aria-label="Slide 18"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="18"
-                                    aria-label="Slide 19"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="19"
-                                    aria-label="Slide 20"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="20"
-                                    aria-label="Slide 21"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/java_1.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_2.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_3.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_4.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_5.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_6.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_7.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_8.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_9.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_10.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_11.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_12.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_13.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_14.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_15.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_16.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_17.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_18.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_19.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_20.png" class="d-block w-100" alt="java">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/java_21.png" class="d-block w-100" alt="java">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                프로젝트 소개
-                            </button>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="work__box">
-                                        <div class="work__detail">
-                                            <div class="work__env" id="env1">
-                                                <div class="work__title">개발 기간</div>
-                                                <div class="env__content">2023.03.06 - 2023.03.13</div>
-                                                <div class="env__content__detail">Java > 자바 콘솔 프로젝트</div>
-                                                <div class="env__content">2023.04.23 - 2023.04.30</div>
-                                                <div class="env__content__detail">Oracle > DB 연결하여 업그레이드</div>
-                                            </div>
-                                            <div class="work__env" id="env2">
-                                                <div class="work__title">개발 인원</div>
-                                                <div class="env__content">5명(팀 프로젝트)</div>
-                                                <div class="env__content__detail">Java</div>
-                                                <div class="env__content">1명(개인 프로젝트)</div>
-                                                <div class="env__content__detail">Oracle</div>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">언어</span>
-                                                <span class="env__content">Java(JDK 11)</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">DB</span>
-                                                <span class="env__content">ORACLE 11g Enterprise</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">IDE</span>
-                                                <span class="env__content">Eclipse(2021-03), SQL Developer</span>
-                                            </div>
-                                        </div>
-                                        <div class="work__description">
-                                            <span class="work__title">설명</span>
-                                            <p class="description__content">
-                                                주식 투자에 대해 잘 알지 못하는 사람들도 쉽게 주식 시스템을 익힐 수 있도록 도움을 주는 프로그램이다.
-                                                모든 사용자는 초기 자산 10,000,000원을 가지고 시작하며, 시세 변동에 따른 매수와 매도를 통해 자산을 늘릴 수 있다.
-                                            </p>
-                                            <p class="description__content">
-                                                jSoup 라이브러리를 이용하여 증권 시세를 크롤링한 후 이를 데이터로 저장하여 프로그램에 적용하였다. Java만을 활용하여 초기
-                                                프로그램을 개발했을 당시에는
-                                                BufferedReader와 BufferedWriter를 이용한 파일
-                                                입출력으로 txt 형식의 데이터를 관리했다. 이후 데이터베이스에 대해 학습하여 JDBC를 통해 기존의 txt 형식의 데이터를
-                                                데이터베이스로 전환하여 관리하였다.
-                                            </p>
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop">
-                                                Launch static backdrop modal
-                                            </button>
-                                            <!-- Modal -->
-                                            <button id="btn1">자세히 보기</button>
-                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                                data-bs-keyboard="false" tabindex="-1"
-                                                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">자세히 보기</h1>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            ...
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <button type="button"
-                                                                class="btn btn-primary">Understood</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="work__frame">
-                <div id="p4">
-                    <h2>교육 관리 시스템</h2>
-                    <div class="project__photo">
-                        <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="true">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="6"
-                                    aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="7"
-                                    aria-label="Slide 8"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="8"
-                                    aria-label="Slide 9"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="9"
-                                    aria-label="Slide 10"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="10"
-                                    aria-label="Slide 11"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="11"
-                                    aria-label="Slide 12"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="12"
-                                    aria-label="Slide 13"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="13"
-                                    aria-label="Slide 14"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="images/oracle_14.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_1.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_2.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_3.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_4.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_5.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_6.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_7.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_8.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_9.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_10.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_11.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_12.png" class="d-block w-100" alt="oracle">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="images/oracle_13.png" class="d-block w-100" alt="oracle">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                프로젝트 소개
-                            </button>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <div class="work__box">
-                                        <div class="work__detail">
-                                            <div class="work__env">
-                                                <span class="work__title">개발 기간</span>
-                                                <span class="env__content">2023.03.28 - 2023.04.07</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">개발 인원</span>
-                                                <span class="env__content">4명</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">DB</span>
-                                                <span class="env__content">ORACLE 11g Enterprise</span>
-                                            </div>
-                                            <div class="work__env">
-                                                <span class="work__title">IDE</span>
-                                                <span class="env__content">SQL Developer</span>
-                                            </div>
-                                        </div>
-                                        <div class="work__description">
-                                            <span class="work__title">설명</span>
-                                            <p class="description__content">
-                                                교육 센터 운영에 필요한 제반 기능들을 관리하는 시스템입니다.
-                                                주 사용자는 관리자, 교사, 교육생으로 접근 권한에 따라 각기 다른 기능을 이용할 수 있습니다.
-                                            </p>
-                                            <p class="description__content">
-                                                먼저 개념적 모델링을 통해 교육 센터 운영에 필요한 개체, 관계, 속성을 정리하였습니다. 정리한 개체, 관계, 속성을 바탕으로
-                                                논리적 데이터 모델링을 진행하였습니다.
-                                                정규화 과정을 거쳐 논리적 데이터 모델을 설계한 후 최종적으로 물리적 모델링을 거쳐 교육 관리 시스템 운영을 위한 관계형
-                                                데이터베이스를 구현하였습니다.
-                                            </p>
-                                            <button id="btn2">자세히 보기</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <h1>Contact</h1>
+  <!-- About -->
+  <section id="about">
+    <h1>About me</h1>
+    <div class="about__wrapper">
+      <div class="about__me">
         <div class="about__me__ps">
-            <div class="info__box">
-                <div class="ps__info">
-                    <div class="info__title">
-                        <i class="fa-solid fa-phone"></i>
-                        연락처
-                    </div>
-                    <div class="info__content">010-9655-0473</div>
-                </div>
+          <div class="info__box">
+            <div class="ps__info">
+              <div class="info__title">
+                <i class="fa-solid fa-user info_icon"></i>
+                이름
+              </div>
+              <div class="info__content margin-bottom">한효원</div>
             </div>
-            <div class="info__box">
-                <div class="ps__info">
-                    <div class="info__title">
-                        <i class="fa-solid fa-envelope"></i>
-                        이메일
-                    </div>
-                    <div class="info__content">sorrel012@gmail.com</div>
-                </div>
+            <div class="ps__info">
+              <div class="info__title">
+                <i class="fa-solid fa-graduation-cap info_icon"></i>
+                학력
+              </div>
+              <div class="info__content">청주교육대학교 초등교육과
+                <div class="info__detail">영어교육 심화전공</div>
+              </div>
             </div>
+          </div>
+          <div class="info__box">
+            <div class="ps__info">
+              <div class="info__title">
+                <i class="fa-solid fa-cake-candles info_icon"></i>
+                생년월일
+              </div>
+              <div class="info__content margin-bottom">1998.01.17</div>
+            </div>
+            <div class="ps__info">
+              <div class="info__title">
+                <i class="fa-solid fa-desktop info_icon"></i>
+                교육
+              </div>
+              <div class="info__content">쌍용교육센터 강남
+                <div class="info__detail">2023.02-01 - 2023.07.12</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact__addition">
-            <div class="contact__logo">
-                <a href="https://github.com/sorrel012" target="_blank">
-                    <img src="images/github.png" alt="github" style="width: 50px; height: 50px;">
-                </a>
-                <a href="https://sorrel012.tistory.com" target="_blank">
-                    <img src="images/tistory.png" alt="tistory" style="width: 50px; height: 50px;">
-                </a>
+        <div class="about__me__cf">
+          <div class="cf__box">
+            <div class="cf__detail">
+              <div class="detail__title">
+                <i class="fa-solid fa-briefcase"></i>
+                경력
+              </div>
+              <div class="detail__name">초등학교 교사</div>
+              <div class="detail__date">2021.03.01 ~ 2022.11.25</div>
             </div>
+          </div>
+          <div class="cf__box">
+            <div class="cf__detail">
+              <div class="detail__title">
+                <i class="fas fa-certificate"></i>
+                자격증
+              </div>
+              <div class="detail__name">정보처리기사(필기)</div>
+              <div class="detail__date">2023.03.</div>
+            </div>
+          </div>
+          <div class="cf__box">
+            <div class="cf__detail">
+              <div class="detail__title">
+                <i class="fas fa-globe"></i>
+                어학
+              </div>
+              <div class="detail__name">
+                Toeic
+                <span class="detail__score">880</span>
+              </div>
+              <div class="detail__date">2022.06.12</div>
+            </div>
+          </div>
         </div>
-        <p class="contact__rights">
-            2023 Hyowon - All rights reserved
-        </p>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <div class="skills__wrapper">
+      <div class="skills__list">
+        <div class="skill__box">
+          <div class="skills__contents1">
+            <div class="skills__color">
+              <div class="skills__title">BackEnd</div>
+              <div class="skills__logo">
+                <div class="logo__img">
+                  <img src="images/skills_java.png" alt="java" width="70px" height="95px">
+                  <img src="images/skills_jsp.png" alt="jsp" width="140px">
+                </div>
+                <div class="logo__img">
+                  <div style="height: 55px;"><img src="images/skills_spring.png" alt="spring" width="150px"></div>
+                  <div><img src="images/skills_python.png" alt="python" width="150px" height="40px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__contents4">
+            <div class="skills__color">
+              <div class="skills__title">DB</div>
+              <div class="skills__logo" style="height: 50px;">
+                <img src="images/skills_oracle.png" alt="oracle" width="200px">
+              </div>
+            </div>
+          </div>
+          <div class="skills__contents3">
+            <div class="skills__color">
+              <div class="skills__title">Tools</div>
+              <div class="skills__logo">
+                <div style="height: 60px;"><img src="images/skills_eclipse.png" alt="eclipse" width="180px">
+                </div>
+                <img src="images/skills_visualstudio.png" alt="vs" width="70px">
+                <img src="images/skills_vscode.png" alt="vscode" width="60px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box">
+          <div class="skills__contents1">
+            <div class="skills__color">
+              <div class="skills__title">FrontEnd</div>
+              <div class="skills__logo">
+                <div style="height: 100px;"><img src="images/skills_front.png" alt="front" width="200px">
+                </div>
+                <div style="height: 80px;"><img src="images/skills_jquery.png" alt="jquery" width="200px">
+                </div>
+                <div style="height: 50px;"><img src="images/skills_bootstrap.png" alt="bootstrap" width="200px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skills__contents2">
+            <div class="skills__color">
+              <div class="skills__title">Server</div>
+              <div class="skills__logo">
+                <img src="images/skills_tomcat.png" alt="tomcat" width="220px">
+              </div>
+            </div>
+          </div>
+          <div class="skills__contents3">
+            <div class="skills__color">
+              <div class="skills__title">Etc.</div>
+              <div class="skills__logo">
+                <img src="images/skills_github.png" alt="github" width="60px">
+                <img src="images/skills_git.png" alt="git" width="80px">
+                <img src="images/skills_phtoshop.png" alt="photoshop" width="60px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <h1>My work</h1>
+    <div class="work__wrapper">
+      <div class="work__frame">
+        <div id="p1">
+          <h2>물질의 성질</h2>
+          <div class="project__photo">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/scratch_1.png" class="d-block w-100" alt="scratch">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/scratch_2.png" class="d-block w-100" alt="scratch">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/scratch_3.png" class="d-block w-100" alt="scratch">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/scratch_4.png" class="d-block w-100" alt="scratch">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/scratch_5.png" class="d-block w-100" alt="scratch">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/scratch_6.png" class="d-block w-100" alt="scratch">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/scratch_7.png" class="d-block w-100" alt="scratch">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                프로젝트 소개
+              </button>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="work__box">
+                    <div class="work__detail">
+                      <div class="work__env">
+                        <span class="work__title">개발 기간</span>
+                        <span class="env__content">2021.05.09 - 2021.05.29</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">개발 인원</span>
+                        <span class="env__content">1명</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">언어</span>
+                        <span class="env__content">Scratch</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">IDE</span>
+                        <span class="env__content">Scratch 3.0</span>
+                      </div>
+                    </div>
+                    <div class="work__description">
+                      <span class="work__title">설명</span>
+                      <p class="description__content">
+                        초등학교 과학 '물질의 성질'을 주제로
+                        제작하여 수업에 활용하였다.<br>메인 화면의 특정 물체를 선택하면 화면이 전환되며 선택한 물체를 구성하고 있는 물질에 대한
+                        설명을
+                        보여준다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__frame">
+        <div id="p2">
+          <h2>Turtle Run</h2>
+          <div class="project__photo">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/python_1.png" class="d-block w-100" alt="python">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/python_2.png" class="d-block w-100" alt="python">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/python_3.png" class="d-block w-100" alt="python">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/python_4.png" class="d-block w-100" alt="python">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/python_5.png" class="d-block w-100" alt="python">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/python_6.png" class="d-block w-100" alt="python">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                프로젝트 소개
+              </button>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="work__box">
+                    <div class="work__detail">
+                      <div class="work__env">
+                        <span class="work__title">수업 기간</span>
+                        <span class="env__content">2022.09.01 - 2022.10.13</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">언어</span>
+                        <span class="env__content">Python</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">IDE</span>
+                        <span class="env__content">IDLE</span>
+                      </div>
+                    </div>
+                    <div class="work__description">
+                      <span class="work__title">설명</span>
+                      <p class="description__content">
+                        초등학교 5-6학년 영재학급 학생들을
+                        대상으로 진행된 수업이다.
+                        파이썬의 기초 문법을 PPT와 활동지를 활용하여
+                        학습한 후 코드를 구현하며 응용해보는
+                        구성으로 수업을 진행했다.
+                        최종적으로 악당 거북이를 피해 더 많은 먹이를 먹는
+                        간단한 게임을 완성하였다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__frame">
+        <div id="p3">
+          <h2>모의 주식 투자 프로그램</h2>
+          <div class="project__photo">
+            <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="14"
+                  aria-label="Slide 15"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="15"
+                  aria-label="Slide 16"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="16"
+                  aria-label="Slide 17"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="17"
+                  aria-label="Slide 18"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="18"
+                  aria-label="Slide 19"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="19"
+                  aria-label="Slide 20"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="20"
+                  aria-label="Slide 21"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/java_1.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_2.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_3.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_4.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_5.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_6.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_7.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_8.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_9.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_10.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_11.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_12.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_13.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_14.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_15.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_16.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_17.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_18.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_19.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_20.png" class="d-block w-100" alt="java">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/java_21.png" class="d-block w-100" alt="java">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                프로젝트 소개
+              </button>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="work__box">
+                    <div class="work__detail">
+                      <div class="work__env" id="env1">
+                        <div class="work__title">개발 기간</div>
+                        <div class="env__content">2023.03.06 - 2023.03.13</div>
+                        <div class="env__content__detail">Java > 자바 콘솔 프로젝트</div>
+                        <div class="env__content">2023.04.23 - 2023.04.30</div>
+                        <div class="env__content__detail">Oracle > DB 연결하여 업그레이드</div>
+                      </div>
+                      <div class="work__env" id="env2">
+                        <div class="work__title">개발 인원</div>
+                        <div class="env__content">5명(팀 프로젝트)</div>
+                        <div class="env__content__detail">Java</div>
+                        <div class="env__content">1명(개인 프로젝트)</div>
+                        <div class="env__content__detail">Oracle</div>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">언어</span>
+                        <span class="env__content">Java(JDK 11)</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">DB</span>
+                        <span class="env__content">ORACLE 11g Enterprise</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">IDE</span>
+                        <span class="env__content">Eclipse(2021-03), SQL Developer</span>
+                      </div>
+                    </div>
+                    <div class="work__description">
+                      <span class="work__title">설명</span>
+                      <p class="description__content">
+                        주식 투자에 대해 잘 알지 못하는 사람들도 쉽게 주식 시스템을 익힐 수 있도록 도움을 주는 프로그램이다.
+                        모든 사용자는 초기 자산 10,000,000원을 가지고 시작하며, 시세 변동에 따른 매수와 매도를 통해 자산을 늘릴 수 있다.
+                      </p>
+                      <p class="description__content">
+                        jSoup 라이브러리를 이용하여 증권 시세를 크롤링한 후 이를 데이터로 저장하여 프로그램에 적용하였다. Java만을 활용하여 초기
+                        프로그램을 개발했을 당시에는
+                        BufferedReader와 BufferedWriter를 이용한 파일
+                        입출력으로 txt 형식의 데이터를 관리했다. 이후 데이터베이스에 대해 학습하여 JDBC를 통해 기존의 txt 형식의 데이터를
+                        데이터베이스로 전환하여 관리하였다.
+                      </p>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        자세히 보기
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="project__detail">
+                                <h1 class="project__title">모의 주식 투자 프로그램</h1>
+                                <hr>
+                                <div class="erd">
+                                  <div class="category">📁 ERD</div>
+                                  <div><img src="images/java_erd.png"></div>
+                                </div>
+                                <div class="category">🔨 기능</div>
+                                <div class="function" id="function1">
+                                  <div class="function__name">1️⃣ 주식 시세 크롤링</div>
+                                  <div class="function__description">네이버 증권에서 주식의 시세를
+                                    얻어와서 데이터베이스에 저장하는 기능입니다.</div>
+                                  <div class="function__screen">
+                                    <div id="carouselExampleIndicators12" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators12"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators12"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_screen_2.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_1.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators12" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators12" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__code">
+                                    <div id="carouselExampleIndicators11" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators11"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators11"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_code_1.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_code_2.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators11" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators11" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__description"><span class="bold">jSoup 라이브러리를 이용하여 시세 정보를 <span
+                                        class="underline">크롤링</span></span>하여
+                                    list에 추가합니다. 그 후 반복문의 index를 적절히 활용하여 list의 요소를
+                                    종목별로 나누어 DB의 코스피, 코스닥 테이블 각 행에 저장합니다.</div>
+                                  <div class="function__screen">
+                                    <div id="carouselExampleIndicators13" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators13"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators13"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_screen_3.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_4.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators13" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators13" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__code">
+                                    <div id="carouselExampleIndicators14" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators14"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators14"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_code_3.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_code_4.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators14" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators14" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__description">코스피와 코스닥 테이블의
+                                    데이터를 각각
+                                    <span class="bold">상승률, 하락률 순위대로 정렬하여 <span class="underline">view</span>를
+                                      생성합니다.</span> 상승률/하락률 Top 10의 시세정보를 조회하는 기능을
+                                    view를 이용하여 간단하게 구현할 수 있습니다.
+                                  </div>
+                                </div>
+                                <div class="function" id="function2">
+                                  <div class="function__name">2️⃣ 종목 검색</div>
+                                  <div class="function__description">종목명을 입력하여 원하는 종목의
+                                    시세를 검색하는 기능입니다.
+                                    회원의 경우 검색한 종목을 관심 종목으로 등록하거나 매수할 수 있습니다.</div>
+                                  <div class="function__screen">
+                                    <div id="carouselExampleIndicators15" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators15"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators15"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators15"
+                                          data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators15"
+                                          data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_screen_5.png" class="d-block w-100 carousel-image"
+                                            alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_6.png" class="d-block w-100 carousel-image"
+                                            alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_7.png" class="d-block w-100 carousel-image"
+                                            alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_8.png" class="d-block w-100 carousel-image"
+                                            alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators15" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators15" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__code">
+                                    <div id="carouselExampleIndicators16" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators16"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators16"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_code_5.png" class="d-block w-100 carousel-image"
+                                            alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_code_6.png" class="d-block w-100 carousel-image"
+                                            alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators16" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators16" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__description">검색한 종목을 관심 종목으로
+                                    등록하거나
+                                    매수할 수 있는 메소드입니다. 비회원일 경우 <span class="bold">NullPointerException</span>을
+                                    발생시킵니다. 해당 <span class="bold"><span class="underline">예외</span>는
+                                      userAdditionalInput()에서 처리</span>하여 로그인하지 않은
+                                    경우 해당 기능을 이용할 수 없음을 안내합니다.</div>
+                                </div>
+                                <div class="function" id="function3">
+                                  <div class="function__name">3️⃣ 개인정보 조회 및 수정</div>
+                                  <div class="function__description">로그인한 사용자가 자신의
+                                    개인정보를 조회하고 수정할 수 있는 기능입니다.
+                                    비밀번호, 이메일, 연락처를 수정할 수 있으며 회원 탈퇴도 이루어집니다.</div>
+                                  <div class="function__screen">
+                                    <div id="carouselExampleIndicators17" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators17"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators17"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators17"
+                                          data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators17"
+                                          data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_screen_9.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_10.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_11.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_12.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators17" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators17" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__code">
+                                    <div id="carouselExampleIndicators18" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_code_7.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="function__description">사용자의 이메일 변경을 처리하는
+                                    메소드입니다.
+                                    먼저 <span class="bold">현재 이메일 주소와 새로운 이메일 주소가
+                                      동일한지 <span class="underline">검증</span></span>한 후,
+                                    동일할 경우 안내 메시지를 출력 후 다시 입력을 받습니다.
+                                    동일하지 않을 경우 <span class="bold">이메일 형식이 올바른지<span class="underline">검증</span></span>
+                                    하여 올바를 경우 이메일 주소를 변경합니다.</div>
+                                </div>
+                                <div class="function" id="function4">
+                                  <div class="function__name">4️⃣ 랭킹 조회</div>
+                                  <div class="function__description">사용자 자산 랭킹을 조회하는
+                                    기능입니다. 자신의 등수를 알 수 있고, 총 자산이 가장 많은 사용자 10명의 자산
+                                    정보를 조회할 수 있습니다.</div>
+                                  <div class="function__screen">
+                                    <div id="carouselExampleIndicators19" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators19"
+                                          data-bs-slide-to="0" class="active" aria-current="true"
+                                          aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators19"
+                                          data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      </div>
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_screen_13.png" class="d-block w-100" alt="java">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="images/java_screen_14.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                      <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators19" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                      </button>
+                                      <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators19" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="function__code">
+                                    <div id="carouselExampleIndicators20" class="carousel slide" data-bs-ride="true">
+                                      <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="images/java_code_8.png" class="d-block w-100" alt="java">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="function__description">전체 사용자의 자산을 정렬하는
+                                    메소드입니다.
+                                    먼저 <span class="bold">사용자의 고유 번호가 key, 총 자산이
+                                      value인 <span class="underline">HashMap</span></span>에서
+                                    key와 value를 Entry 형식으로 변환합니다. 그 후 <span class="bold">총 자산인 value를 기준으로 내림차순 <span
+                                        class="underline">정렬</span></span>하고, 만약
+                                    <span class="bold">총 자산이 같을 경우 고유 번호인 key를 기준
+                                      으로 오름차순 <span class="underline">정렬</span></span>합니다.
+                                  </div>
+                                </div>
+                                <div class="review">
+                                  <div class="category">🧾 소감</div>
+                                  <div class="review__team">
+                                    <div id="sort__team" class="sort">
+                                      <팀 프로젝트>
+                                    </div>
+                                    <p> 처음으로 진행하는 팀프로젝트로, 프로젝트 초기 단계에서 많은 이야기룰
+                                      나누었습니다. 특히 설계 과정에서 활발한 상호작용을 통해 기능을 세부적으로
+                                      분배하여 공통된 메소드를 추출했습니다. 이를 통해 같은 작업을 반복하는 일을
+                                      줄여 효율성을 높일 수 있었습니다. 기능을 구현할 때는 처음에 branch를
+                                      나누지 않고 main branch에서 모두 작업하다 보니 계속 충돌이
+                                      발생하였습니다. 이를 해결하기 위해 각자 branch를 생성하고, 기능 구현을
+                                      마친 후 팀원들과 공유한 후 병합하는 방법을 선택했더니 오류를 줄일 수
+                                      있었습니다. 이처럼 구현 중에도 실시간으로 작업하며 오류 없이 진행하기 위해서
+                                      끊임없이 이야기를 나누어야 했습니다. 소통이라는 <span class="bold">팀 단위 작업에서 가장 중요한 것은 <span
+                                          class="underline">소통</span>이라는 것을
+                                        깨달을 수 있었던 프로젝트</span>였습니다.</p>
+                                  </div>
+                                  <div class="review__ind">
+                                    <div id="sort__ind" class="sort">
+                                      <개인 프로젝트>
+                                    </div>
+                                    <p> <span class="bold">팀 프로젝트를 하면서 느꼈던 불편한 점을
+                                        개선하기 위해 개인 프로젝트를 시작</span>했습니다. 팀 프로젝트
+                                      당시에는 파일 입출력을 통해 데이터를 관리했기 때문에 <span class="bold">데이터의 특정 부분에만 접근할 수 없어서 전체
+                                        데이터를 다 읽어온 후 조작하고 다시 전체를 저장</span>해야
+                                      했습니다. 데이터베이스에 대해 학습하며 이러한 불편함을 해결할 수 있을 것
+                                      같다는 생각이 들어 <span class="bold">파일입출력 구조에서
+                                        데이터베이스로 전환하는 개인 프로젝트를 추가로 진행</span>하게
+                                      되었습니다.</p>
+                                    <p> 개인 프로젝트를 진행할 때는 기존 팀 프로젝트에서 다른 팀원들이 구현한 코드도
+                                      수정해야 했기 때문에 많은 이해와 노력이 필요했습니다. 그렇지만 프로젝트를
+                                      마치고 나니 파일 입출력보다 훨씬 더 <span class="bold">간단하게, 효율적으로 데이터를 관리</span>할
+                                      수 있었습니다. 직접 겪었던 불편함을 해결하기 위해 데이터베이스를 활용하면서
+                                      데이터베이스의 필요성을 확실히 느낄 수 있었습니다.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__frame">
+        <div id="p4">
+          <h2>교육 관리 시스템</h2>
+          <div class="project__photo">
+            <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4"
+                  aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="5"
+                  aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="6"
+                  aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="7"
+                  aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="8"
+                  aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="9"
+                  aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="10"
+                  aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="11"
+                  aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="12"
+                  aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="13"
+                  aria-label="Slide 14"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/oracle_14.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_1.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_2.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_3.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_4.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_5.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_6.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_7.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_8.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_9.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_10.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_11.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_12.png" class="d-block w-100" alt="oracle">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/oracle_13.png" class="d-block w-100" alt="oracle">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                프로젝트 소개
+              </button>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="work__box">
+                    <div class="work__detail">
+                      <div class="work__env">
+                        <span class="work__title">개발 기간</span>
+                        <span class="env__content">2023.03.28 - 2023.04.07</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">개발 인원</span>
+                        <span class="env__content">4명</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">DB</span>
+                        <span class="env__content">ORACLE 11g Enterprise</span>
+                      </div>
+                      <div class="work__env">
+                        <span class="work__title">IDE</span>
+                        <span class="env__content">SQL Developer</span>
+                      </div>
+                    </div>
+                    <div class="work__description">
+                      <span class="work__title">설명</span>
+                      <p class="description__content">
+                        교육 센터 운영에 필요한 제반 기능들을 관리하는 시스템입니다.
+                        주 사용자는 관리자, 교사, 교육생으로 접근 권한에 따라 각기 다른 기능을 이용할 수 있습니다.
+                      </p>
+                      <p class="description__content">
+                        먼저 개념적 모델링을 통해 교육 센터 운영에 필요한 개체, 관계, 속성을 정리하였습니다. 정리한 개체, 관계, 속성을 바탕으로
+                        논리적 데이터 모델링을 진행하였습니다.
+                        정규화 과정을 거쳐 논리적 데이터 모델을 설계한 후 최종적으로 물리적 모델링을 거쳐 교육 관리 시스템 운영을 위한 관계형
+                        데이터베이스를 구현하였습니다.
+                      </p>
+                      <button id="btn2">자세히 보기</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h1>Contact</h1>
+    <div class="about__me__ps">
+      <div class="info__box">
+        <div class="ps__info">
+          <div class="info__title">
+            <i class="fa-solid fa-phone"></i>
+            연락처
+          </div>
+          <div class="info__content">010-9655-0473</div>
+        </div>
+      </div>
+      <div class="info__box">
+        <div class="ps__info">
+          <div class="info__title">
+            <i class="fa-solid fa-envelope"></i>
+            이메일
+          </div>
+          <div class="info__content">sorrel012@gmail.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact__addition">
+      <div class="contact__logo">
+        <a href="https://github.com/sorrel012" target="_blank">
+          <img src="images/github.png" alt="github" style="width: 50px; height: 50px;">
+        </a>
+        <a href="https://sorrel012.tistory.com" target="_blank">
+          <img src="images/tistory.png" alt="tistory" style="width: 50px; height: 50px;">
+        </a>
+      </div>
+    </div>
+    <p class="contact__rights">
+      2023 Hyowon - All rights reserved
+    </p>
+  </section>
 
 </body>
 

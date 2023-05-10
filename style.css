@@ -403,14 +403,6 @@
     font-size: 1.3rem;
 }
 
-.description__btn {
-    margin-bottom: 10px;
-    border: 1px solid var(--color-light-grey);
-    border-radius: 7px;
-    background-color: var(--color-white);
-    color: var(--color-dark-grey);
-}
-
 #env1 .work__title {
     display: block;
 }
@@ -442,6 +434,24 @@
     border-color: rgb(204, 74, 96);
 }
 
+.work__frame .btn-primary {
+    background-color: rgba(207, 21, 52, 0.705);
+    border-color: rgba(167, 16, 41, 0.705);
+}
+
+.work__frame .btn-primary:hover {
+    background-color: rgba(207, 22, 53, 0.863);
+    border-color: rgba(167, 16, 41, 0.89);
+}
+
+#work .work__frame .btn-primary:active {
+    background-color: rgba(207, 22, 53, 0.863);
+    border-color: rgba(167, 16, 41, 0.89);
+}
+
+.work__frame .modal-footer {
+    padding-right: 30px;
+}
 
 /* Contact */
 
@@ -495,11 +505,13 @@
     margin: 10px auto;
 }
 
-.project__title  {
+#work .project__title  {
     color: var(--color-black);
+    font-size: 2.5rem;
+    text-align: left;
 }
 
-#function1 .function__code, #function1 .function__screen {
+.function__code, .function__screen {
     width: 400px;
     height: 500px;
 } 
@@ -532,7 +544,7 @@
 }
 
 .function__code {
-    margin-left: 50px;
+    margin-left: 85px;
 }
 
 .function__description::before {
@@ -543,18 +555,19 @@
 
 .project__detail .carousel-control-next-icon, .project__detail .carousel-control-prev-icon, .project__detail .carousel-indicators button{
     background-color: rgb(202, 202, 202);
+    opacity: .5;
 }
 
-.function__description .bold {
+.bold {
     font-weight: var(--weight-semi-bold);
 }
 
-.function__description .underline {
+.underline {
     position: relative;
     display: inline-block;
 }
 
-.function__description .underline::after {
+.underline::after {
     content: "";
     position: absolute;
     bottom: 1px; 
@@ -574,7 +587,21 @@
 }
 
 .project__detail hr {
-  border: none; /* 기본 테두리 스타일을 제거 */
-  height: 2px; /* 밑줄의 두께를 변경하려면 이 값을 조절하세요 */
-  background-color: black; /* 원하는 색상으로 변경하세요 */
+  border: none; 
+  height: 2px; 
+  background-color: black; 
+}
+
+.review {
+    max-width: 1050px;
+}
+
+.sort {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.review__team ,.review__ind {
+    margin-bottom: 50px;
 }
