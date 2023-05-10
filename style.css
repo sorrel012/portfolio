@@ -147,6 +147,21 @@
     margin-left: 15px;
 }
 
+.header__toggle-btn {
+    position: absolute;
+    right: 32px;
+    top: 5px;
+    font-size: 24px;    
+    display: none;
+}
+
+#header button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-brown);
+}
+
+
 /* Common */
 #about h1, #skills h1, #work h1, #contact h1 {
     text-align: center;
@@ -604,4 +619,61 @@
 
 .review__team ,.review__ind {
     margin-bottom: 50px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+    .header__toggle-btn {
+        display: block;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about__me__ps {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .about__me__cf {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .info__content {
+        margin-bottom: 20px;
+    }
+
+    .detail__date {
+        margin-bottom: 20px;
+    }
+
+    .skills__list {
+        flex-direction: column;
+    }
+
+    .skill__box{
+        margin: 0 auto;
+    }
+
+    .project__photo {
+        max-width: 100%;
+    }
+
+    #contact .about__me__ps {
+        max-width: 100%;
+        padding-top: 30px;
+    }
 }
