@@ -226,6 +226,7 @@
 
 #about {
     background-color: var(--color-white);
+    padding-top: 27px;
 }
 
 .about__wrapper{    
@@ -293,6 +294,7 @@
 
 #skills {
     background-color: #FCD5CE;
+    padding-top: 27px;
 }
 
 .skills__wrapper {
@@ -355,7 +357,7 @@
 
 #work { 
     background-color: #F8EDEB;
-    padding: 20px;
+    padding: 27px;
 }
 
 .work__wrapper {    
