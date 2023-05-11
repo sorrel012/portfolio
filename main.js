@@ -48,3 +48,10 @@ document.addEventListener('scroll', () => {
         arrowUp.classList.remove('visible');
     }
 });
+
+//Handle click on the arrow-up button
+arrowUp.addEventListener('click', () => {
+    const scrollTo = document.querySelector('#home');
+    console.log(document.querySelector('#home'));
+    scrollTo.scrollIntoView();
+});
