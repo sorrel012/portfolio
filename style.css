@@ -449,6 +449,12 @@
     border-color: rgb(204, 74, 96);
 }
 
+.work__frame .accordion-button {
+    border: 1px solid rgb(204, 74, 96);
+    background-color: #fdfafa;
+    color: rgb(204, 74, 96);
+}
+
 .work__frame .btn-primary {
     background-color: rgba(207, 21, 52, 0.705);
     border-color: rgba(167, 16, 41, 0.705);
@@ -619,6 +625,44 @@
 
 .review__team ,.review__ind {
     margin-bottom: 50px;
+}
+
+#work .modal-footer {
+    justify-content: space-between;
+}
+
+#work .modal-footer .link {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.link a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.link__title {
+    padding-top: 5px;
+}
+
+.link__github {
+    margin-right: 20px;
+    padding-top: 1.5px;
+}
+
+.link__drive {
+    padding-top: 4px;
+}
+
+.mock-up__screen {
+    width: 800px;
+    height: 450px;
+}
+
+.mock-up {
+    height: 650px;
 }
 
 /* responsive */
