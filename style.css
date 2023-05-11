@@ -438,6 +438,7 @@
 
 .work__frame .accordion-body {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .work__frame .accordion-button:not(.collapsed) {
@@ -604,7 +605,7 @@
     width: 1050px;
     border-radius: 10px;
     padding-left: 50px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .project__detail hr {
@@ -647,7 +648,7 @@
     padding-top: 5px;
 }
 
-.link__github {
+.link__github, .link__drive {
     margin-right: 20px;
     padding-top: 1.5px;
 }
@@ -664,6 +665,12 @@
 .mock-up {
     height: 650px;
 }
+
+.erd img {
+    width: 900px;
+    height: 508px;
+}
+
 
 /* responsive */
 
