@@ -31,6 +31,8 @@ headerMenu.addEventListener('click', (event) => {
     selectHeadItem(target);
 
     scrollTo.scrollIntoView({ behavior: 'smooth' });
+    
+    selectHeadItem(headItems[sectionIds].indexOf(link));
 });
 
 
@@ -64,8 +66,8 @@ document.addEventListener('scroll', () => {
 //Handle click on the arrow-up button
 arrowUp.addEventListener('click', () => {
     const scrollTo = document.querySelector('#home');
-    console.log(document.querySelector('#home'));
-    scrollTo.scrollIntoView();
+    scrollTo.scrollIntoView();    
+    selectHeadItem(headItems[sectionIds.indexOf('#home')]);
 });
 
 
