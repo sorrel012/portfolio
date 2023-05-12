@@ -719,6 +719,7 @@
         flex-direction: column;
         align-items: flex-start;
         background-color: var(--color-beige);
+        z-index: 2 !important;
     }
 
     .header__menu {
@@ -726,6 +727,11 @@
         text-align: center;
         width: 100%;
         display:block;
+        z-index: 2 !important;
+    }
+
+    .carousel-indicators {
+        z-index: 1 !important;
     }
 
     .header__menu.close {
@@ -739,7 +745,6 @@
         font-size: 1.2rem;
         width: 90%;
     }
-
 
     .info__title, .detail__title {
         font-size: 1.4rem;
@@ -791,10 +796,6 @@
     .work__box {
         flex-direction: column;
     }
-/* 
-    .work__env {
-        max-width: 20%;
-    } */
 
     .work__description {
         max-width: 100%;
@@ -912,4 +913,7 @@
         right: 16px;
         bottom: 16px;
     }
-}
+
+    .header__menu {
+        z-index: 1;
+    }
