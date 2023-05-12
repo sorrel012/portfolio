@@ -797,4 +797,37 @@
     .accordion-button.collapsed {
         font-size: 1rem;
     }
+
+    #work .modal img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mock-up__screen {
+        width: 100%;
+        height: 50%;
+    }
+
+    .mock-up {
+        width: 100%;
+        height: 25%;
+    }
+
+    .project__detail {
+        width: 100%;
+        height: 100%;
+    }
+
+    .function {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .function__code, .function__screen {
+        width: 70%;
+        height: 70%;
+        margin-left: 10px;
+    }
+
 }
