@@ -24,10 +24,20 @@ headerMenu.addEventListener('click', (event) => {
         return;
     }
 
+    headerMenu.classList.remove('close');
+
     const scrollTo = document.querySelector(link);
     console.log(document.querySelector(link));
     scrollTo.scrollIntoView();
 });
+
+
+//Header toggle button for small screen
+const headerToggleBtn = document.querySelector('.header__toggle-btn');
+headerToggleBtn.addEventListener('click', ()=> {
+    headerMenu.classList.toggle('close');
+});
+
 
 //Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
