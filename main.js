@@ -27,8 +27,10 @@ headerMenu.addEventListener('click', (event) => {
     headerMenu.classList.remove('close');
 
     const scrollTo = document.querySelector(link);
-    console.log(document.querySelector(link));
-    scrollTo.scrollIntoView();
+    
+    selectHeadItem(target);
+
+    scrollTo.scrollIntoView({ behavior: 'smooth' });
 });
 
 
@@ -65,3 +67,61 @@ arrowUp.addEventListener('click', () => {
     console.log(document.querySelector('#home'));
     scrollTo.scrollIntoView();
 });
+
+
+const sectionIds = [
+    '#home',
+    '#about',
+    '#skills',
+    '#work',
+    '#contact',
+];
+
+const sections = sectionIds.map(id => document.querySelector(id));
+const headItems = sectionIds.map(id =>
+  document.querySelector(`[data-link="${id}"]`)
+);
+
+let selectedHeadIndex = 0;
+let selectedHeadItem = headItems[0];
+
+function selectHeadItem(selected) {
+  selectedHeadItem.classList.remove('active');
+  selectedHeadItem = selected;
+  selectedHeadItem.classList.add('active');
+}
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.3,
+};
+
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+      const index = sectionIds.indexOf(`#${entry.target.id}`);      
+      if (entry.boundingClientRect.y < 0) {
+        selectedHeadIndex = index + 1;
+      } else {
+        selectedHeadIndex = index - 1;
+      }
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
+
+window.addEventListener('wheel', () => {
+    if (window.scrollY === 0) {
+      selectedHeadIndex = 0;
+    } else if (
+      window.scrollY + window.innerHeight ===
+      document.body.clientHeight
+    ) {
+        selectedHeadIndex = navItems.length - 1;
+    }
+    selectHeadItem(headItems[selectedHeadIndex]);
+  });
+  
