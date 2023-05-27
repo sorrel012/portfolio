@@ -190,7 +190,7 @@
     color: var(--color-dark-grey);
 }
 
-#home .home__title {
+#home .home__title div {
     font-family: TmoneyRoundWindExtraBold;
     font-weight: lighter;
     color: var(--color-dark-brown);
@@ -199,12 +199,6 @@
 .home__title > div {
     margin-top: 25px;
     margin-bottom: 10px;
-}
-
-.home__pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
 }
 
 .home__download {
@@ -247,6 +241,13 @@
     padding: 20px;
     color: rgb(54, 35, 16);
 }
+
+.home__pic {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+}
+
 
 .info__title {
     margin-bottom: 2px;
