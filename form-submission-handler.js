@@ -76,6 +76,7 @@
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
+              alert('메일 전송이 완료되었습니다.')
               thankYouMessage.style.display = "block";
             }
           }
