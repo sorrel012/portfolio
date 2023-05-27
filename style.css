@@ -506,11 +506,6 @@
     color: var(--color-dark-brown);
 }
 
-#contact .about__me__ps {
-    width: 700px;
-    margin-bottom: 10px;
-}
-
 .contact__addition {
     font-size: 50px;
     text-align: center;
@@ -533,11 +528,25 @@
     transform: scale(1.1,1.1);
 }
 
-#contact .info__content {
-    font-size: 1.3rem;
+#contact > div.container.py-5 {    
+    width: 700px;
+    border: 3px dotted #e3d5ca;
+    background-color: #fafaf9;
+    border-radius: 30px;    
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
     margin-bottom: 10px;
 }
 
+#contact > div.container.py-5 #message {    
+    margin-bottom: 30px;
+}
+
+#contact > div.container.py-5 .row button {    
+    background-color: var(--color-dark-brown);
+    border: none;
+    font-size: 1rem;
+}
 
 /* Work Detail */
 
@@ -916,6 +925,10 @@
         font-size: 30px;
         right: 16px;
         bottom: 16px;
+    }
+
+    #contact > div.container.py-5 {
+        width: 80%;
     }
 
 }
