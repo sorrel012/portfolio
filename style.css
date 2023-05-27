@@ -532,7 +532,6 @@
     border-radius: 30px;    
     padding-top: 0 !important;
     padding-bottom: 0 !important;
-    margin-bottom: 10px;
 }
 
 #contact > div.container.py-5 #message {    
@@ -543,7 +542,15 @@
     background-color: var(--color-dark-brown);
     border: none;
     font-size: 1rem;
+    margin-bottom: 10px;
 }
+
+#contact .thankyou_message{
+    margin-top: 15px;
+    text-align: center;
+}
+
+
 
 /* Work Detail */
 

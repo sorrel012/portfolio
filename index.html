@@ -1678,30 +1678,35 @@
     <h1>Contact</h1>
     <div class="container py-5">
       <div class="row py-5">
-        <form class="col-md-9 m-auto" method="post" role="form">
+        <form class="col-md-9 m-auto gform" method="post" role="form" data-email="sorrel012@gmail.com" action="https://script.google.com/macros/s/AKfycbz2G91qm0uj-ZF1tjJX7n3qesE0yDn9oFVGDkkjtSy9hnIfLDsn91JFRPy60PU1zV5YLA/exec">
           <div class="row">
             <div class="form-group col-md-6 mb-3">
               <label for="inputname">Name</label>
-              <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
+              <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Write down your name" required>
             </div>
             <div class="form-group col-md-6 mb-3">
               <label for="inputemail">Email</label>
-              <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+              <input type="email" class="form-control mt-1" id="email" name="email" placeholder="id@email.com" required>
             </div>
           </div>
           <div class="mb-3">
             <label for="inputsubject">Subject</label>
-            <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
+            <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject" required>
           </div>
           <div class="mb-3">
             <label for="inputmessage">Message</label>
-            <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
+            <textarea class="form-control mt-1" id="message" name="message" placeholder="Write down the message you want to send me" rows="8" required></textarea>
           </div>
           <div class="row">
             <div class="col text-end mt-2">
               <button type="submit" class="btn btn-success btn-lg px-3">연락하기</button>
             </div>
           </div>
+          <div style="display:none" class="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below -->
+            <h4>제출이 완료되었습니다.</h4>
+            <h4>빠르게 확인 후 연락드리겠습니다.</h4>
+           </div>
         </form>
       </div>
     </div>
@@ -1723,9 +1728,12 @@
 
   <!-- Arrow up -->
   <button class="arrow-up">
-    <i class="fas fa-arrow-up"></i>
+    <i class="fas fa-arrow-up"></i><script data-cfasync="false" type="text/javascript" 
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+</script> 
   </button>
 
+<script data-cfasync="false" type="text/javascript"src="form-submission-handler.js"></script>   
 </body>
 
 </html>
