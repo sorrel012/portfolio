@@ -135,20 +135,16 @@
     padding: 5px;
 }
 
-.header__language:hover {
+.header__language:hover{
     cursor: pointer;
     border-radius: 50%;
-    border: 1px solid transparent;
-}
-
-.header__language.active {
-    border: 1px solid var(--color-brown);
-    background-color: rgba(250, 250, 250, 0.781);
-}
-
-.header__language:hover {
     background-color: rgba(250, 250, 250, 0.781);
     border: 1px solid var(--color-brown);
+}
+
+.header__language.active{
+    border: 1px solid var(--color-brown);
+    background-color: rgba(250, 250, 250, 0.781);
 }
 
 .header__language__toggle {
@@ -800,11 +796,28 @@
         display: inline-block;
     }
 
+    .header__toggle-btn i {
+        margin-bottom: 9px;
+    }
+
     .header__toggle-btn img {
-        width: 23px;
-        height: 23px;
+        width: 28px;
+        height: 28px;
         margin-bottom: 7px;
         margin-right: 10px;
+        padding: 2px;
+    }
+
+    .header__toggle-btn img:hover{
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: rgba(250, 250, 250, 0.781);
+        border: 1px solid var(--color-brown);
+    }
+    
+    .header__toggle-btn img.active{
+        border: 1px solid var(--color-brown);
+        background-color: rgba(250, 250, 250, 0.781);
     }
 
     .carousel-indicators {
