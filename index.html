@@ -27,20 +27,23 @@
   <nav id="header">
     <div class="header__logo">
       <img src="images/favicon.png">
-      <a href="#">Han Hyowon</a>
+      <a href="#" class="logo__name">Hyowon</a>
     </div>
     <div class="header__menu close">
-      <ul class="header__menu">
-        <li class="header__menu__item active" data-link="#home">Home</li>
-        <li class="header__menu__item" data-link="#about">About</li>
-        <li class="header__menu__item" data-link="#skills">Skills</li>
-        <li class="header__menu__item" data-link="#work">My work</li>
-        <li class="header__menu__item" data-link="#contact">Contact</li>
-      </ul>
-    </div>
-
-    <!-- Toggle button -->
+      <div>
+        <ul class="header__menu">
+          <li class="header__menu__item active" data-link="#home">Home</li>
+          <li class="header__menu__item" data-link="#about">About</li>
+          <li class="header__menu__item" data-link="#skills">Skills</li>
+          <li class="header__menu__item" data-link="#work">My work</li>
+          <li class="header__menu__item" data-link="#contact">Contact</li>
+        </ul>
+      </div>      
+      <img src="images/lan_eng.png" alter="eng" class="header__language">
+    </div>    
+    <!-- Toggle button -->    
     <button class="header__toggle-btn">
+      <img src="images/lan_eng.png" alter="eng">
       <i class="fas fa-bars"></i>
     </button>
 
@@ -48,11 +51,11 @@
 
   <!-- Home -->
   <section id="home">
-    <div class="home__container">      
+    <div class="home__container">
       <img src="images/pc.jpg">
       <h1 class="home__title">안녕하세요.</h1>
-      <h2 class="home__title">성장하고 발전하는 백앤드 개발자 한효원입니다.</h2>
-      <h2 class="home__title">어떠한 상황에서도 긍정적인 마인드로 접근하며 최선을 다하겠습니다.</h2>
+      <h2 class="home__title">성장하고 발전하는 개발자 한효원입니다.</h2>
+      <h2 class="home__title">어떠한 상황에서도 긍정적인 마인드로 최선을 다하겠습니다.</h2>
       <div class="home__download">
         <a href="https://drive.google.com/u/0/uc?id=185V41Wg6FdAomlSv2X5Hzl-_AdbxT0-D&export=download">포트폴리오 pdf 버전
           다운로드를 원하시면 클릭해 주세요. <i class="fas fa-arrow-pointer"></i></a>
@@ -1678,11 +1681,13 @@
     <h1>Contact</h1>
     <div class="container py-5">
       <div class="row py-5">
-        <form class="col-md-9 m-auto gform" method="post" role="form" data-email="sorrel012@gmail.com" action="https://script.google.com/macros/s/AKfycbwfVaK5MGeH7XDiJ62UIB9wvgxI14lA_Dk2Lkebpb1-0lNal4vgHDaDtegyhCRI3MH36Q/exec">
+        <form class="col-md-9 m-auto gform" method="post" role="form" data-email="sorrel012@gmail.com"
+          action="https://script.google.com/macros/s/AKfycbwfVaK5MGeH7XDiJ62UIB9wvgxI14lA_Dk2Lkebpb1-0lNal4vgHDaDtegyhCRI3MH36Q/exec">
           <div class="row">
             <div class="form-group col-md-6 mb-3">
               <label for="inputname">Name</label>
-              <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Write down your name" required>
+              <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Write down your name"
+                required>
             </div>
             <div class="form-group col-md-6 mb-3">
               <label for="inputemail">Email</label>
@@ -1695,7 +1700,9 @@
           </div>
           <div class="mb-3">
             <label for="inputmessage">Message</label>
-            <textarea class="form-control mt-1" id="message" name="message" placeholder="Write down the message you want to send me" rows="8" style="resize: none;" required></textarea>
+            <textarea class="form-control mt-1" id="message" name="message"
+              placeholder="Write down the message you want to send me" rows="8" style="resize: none;"
+              required></textarea>
           </div>
           <div class="row">
             <div class="col text-end mt-2">
@@ -1706,7 +1713,7 @@
             <!-- You can customize the thankyou message by editing the code below -->
             <h4>메일 전송이 완료되었습니다.</h4>
             <h4>빠르게 확인 후 회신드리겠습니다.</h4>
-           </div>
+          </div>
         </form>
       </div>
     </div>
@@ -1731,7 +1738,7 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
-<script data-cfasync="false" type="text/javascript"src="form-submission-handler.js"></script>   
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 
 </html>
