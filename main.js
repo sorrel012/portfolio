@@ -61,6 +61,13 @@ headerLanguageBtn.addEventListener('click', () => {
   navigateToPage(name);
 });
 
+const headerLanguageMobileBtn = document.querySelector('.header__toggle-btn img')
+headerLanguageMobileBtn.addEventListener('click', () => {
+  const name = headerLanguageMobileBtn.name;
+
+  navigateToPage(name);
+});
+
 function scrollToSavedPosition() {
   const scrollPosition = sessionStorage.getItem('scrollPosition');
 
