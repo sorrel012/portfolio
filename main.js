@@ -35,6 +35,11 @@ headerMenu.addEventListener('click', (event) => {
     selectHeadItem(headItems[sectionIds].indexOf(link));
 });
 
+//Header toggle button for small screen
+const headerToggleBtn = document.querySelector('.header__toggle-btn i');
+headerToggleBtn.addEventListener('click', ()=> {
+    headerMenu.classList.toggle('close');
+});
 
 // Store current location
 function saveScrollPosition() {
