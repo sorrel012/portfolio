@@ -42,6 +42,18 @@ headerToggleBtn.addEventListener('click', ()=> {
     headerMenu.classList.toggle('close');
 });
 
+//Header language button for change language
+const headerLanguageBtn = document.querySelector('.header__language');
+headerLanguageBtn.addEventListener('click', ()=> {
+  const name = headerLanguageBtn.name;
+
+  if(name=='kor') {
+    location.href="english.html";
+  } else if(name=='eng') {
+    location.href="index.html";
+  }
+});
+
 
 //Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
