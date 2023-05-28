@@ -37,7 +37,7 @@ headerMenu.addEventListener('click', (event) => {
 
 
 //Header toggle button for small screen
-const headerToggleBtn = document.querySelector('.header__toggle-btn');
+const headerToggleBtn = document.querySelector('.header__toggle-btn i');
 headerToggleBtn.addEventListener('click', ()=> {
     headerMenu.classList.toggle('close');
 });
