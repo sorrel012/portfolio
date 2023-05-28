@@ -1010,7 +1010,7 @@
 
     #home > div > img {
         margin-bottom: 20px;
-        width: 500px;
+        width: 80%;
         min-width: 0;
     }
 
@@ -1020,15 +1020,15 @@
     }
 
     #home > div > h1 {
-        font-size: 2rem;
-    }
-
-    #home > div > h2 {
         font-size: 1.5rem;
     }
 
+    #home > div > h2 {
+        font-size: 1.3rem;
+    }
+
     #home .home__download a{
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
 }
