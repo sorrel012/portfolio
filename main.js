@@ -36,23 +36,41 @@ headerMenu.addEventListener('click', (event) => {
 });
 
 
-//Header toggle button for small screen
-const headerToggleBtn = document.querySelector('.header__toggle-btn i');
-headerToggleBtn.addEventListener('click', ()=> {
-    headerMenu.classList.toggle('close');
-});
+// Store current location
+function saveScrollPosition() {
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+  sessionStorage.setItem('scrollPosition', scrollPosition);
+}
 
-//Header language button for change language
+// Store current location and redirect another page
+function navigateToPage(targetPage) {
+  saveScrollPosition();
+
+  if (targetPage === 'kor') {
+    location.href = 'english.html';
+  } else if (targetPage === 'eng') {
+    location.href = 'index.html';
+  }
+}
+
+// Move to stored location
 const headerLanguageBtn = document.querySelector('.header__language');
-headerLanguageBtn.addEventListener('click', ()=> {
+headerLanguageBtn.addEventListener('click', () => {
   const name = headerLanguageBtn.name;
 
-  if(name=='kor') {
-    location.href="english.html";
-  } else if(name=='eng') {
-    location.href="index.html";
-  }
+  navigateToPage(name);
 });
+
+function scrollToSavedPosition() {
+  const scrollPosition = sessionStorage.getItem('scrollPosition');
+
+  if (scrollPosition) {
+    window.scrollTo(0, scrollPosition);
+    sessionStorage.removeItem('scrollPosition');
+  }
+}
+
+scrollToSavedPosition();
 
 
 //Make home slowly fade to transparent as the window scrolls down
