@@ -64,6 +64,7 @@
       //disableAllButtons(form);
       var url = form.action;
       var xhr = new XMLHttpRequest();
+      const headerLanguageBtn = document.querySelector('.header__language');
       xhr.open('POST', url);
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -76,7 +77,12 @@
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
-              alert('메일 전송이 완료되었습니다.')
+
+              if(headerLanguageBtn.name == 'kor') {
+                alert('메일 전송이 완료되었습니다.')
+              } else if(headerLanguageBtn.name == 'eng') {
+                alert('The email has been sent successfully.')
+              }
               thankYouMessage.style.display = "block";
             }
           }
