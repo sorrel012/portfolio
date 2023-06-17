@@ -770,6 +770,11 @@
     pointer-events: auto;
 }
 
+.fas {
+    position: relative;
+    top: -3px;
+}
+
 /* responsive */
 
 @media screen and (max-width: 845px) {
@@ -1034,6 +1039,10 @@
 
     #home .home__download a{
         font-size: 0.95rem;
+    }
+
+    .arrow-up {
+        right: 5px;
     }
 
 }
