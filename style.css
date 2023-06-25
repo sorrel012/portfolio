@@ -705,6 +705,11 @@
     margin-bottom: 50px;
 }
 
+#carouselExampleIndicators30 {
+    width: 500px;
+    height: 600px;
+}
+
 #work .modal-footer {
     justify-content: space-between;
 }
